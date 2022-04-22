@@ -44,8 +44,8 @@
 </template>
 
 <script>
-import Input from "@js/components/landing/elements/Input";
-import Button from "@js/components/landing/elements/Button";
+import Input from "@//components/landing/elements/Input";
+import Button from "@//components/landing/elements/Button";
 
 export default {
   name: "FormContato",

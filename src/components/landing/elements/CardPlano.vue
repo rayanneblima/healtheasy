@@ -1,14 +1,13 @@
 <template>
-  <div class="card-plano" v-show="preco">
-    <span class="flag-discount" v-show="desconto > 0">{{ desconto * 100 }}% OFF</span>
+  <div :class="`card-plano plano-${plano.id}`" v-show="plano">
     <div class="plano-preco">
-      <h4><span>R$</span>{{ preco }} *</h4>
+      <h4><span>R$</span>{{ plano.valor }}</h4>
       <p>/mês</p>
     </div>
     <div class="plano-descricao">
       <h6>What's included</h6>
       <ul>
-        <li class="plano-item" v-for="item in servicos" :key="item.id">
+        <li class="plano-item" v-for="item in plano.inclui" :key="item.id">
           <p>
             {{ item.nome }}
             <span
@@ -21,13 +20,11 @@
 
       <Button text="Aderir ao plano" :width="180" />
     </div>
-
-    <sub><b>*</b> R$ 29,90 por quantidade de acesso</sub>
   </div>
 </template>
 
 <script>
-import Button from "@js/components/landing/elements/Button";
+import Button from "@/components/landing/elements/Button";
 
 export default {
   name: "CardPlano",
@@ -37,20 +34,10 @@ export default {
   },
 
   props: {
-    desconto: {
-      default: 0,
-      type: Number
-    },
-
-    preco: {
-      default: '',
-      type: String
-    },
-
-    servicos: {
-      default: () => ([]),
+    plano: {
+      default: () => ({}),
       required: true,
-      type: Array
+      type: Object
     }
   }
 }
@@ -59,63 +46,37 @@ export default {
 <style scoped>
 .card-plano {
   background: var(--light-blue);
-  border: 2px solid var(--dark-blue);
   border-radius: 6px;
   box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
 
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   min-height: 450px;
+  justify-content: flex-start;
   padding: 20px;
-  position: relative;
   transition: all 0.3s ease-in-out;
   width: 300px;
 }
 
-.card-plano:hover {
+.card-plano:not(.plano-2):hover {
+  border: 2px solid var(--dark-blue);
   transform: scale(1.1);
 }
 
-.flag-discount {
-  background: var(--dark-purple);
-  border-radius: 6px 6px 0 0;
-  color: var(--white);
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-
-  display: block;
-  max-width: 50px;
-  padding: 5px;
-  position: absolute;
-  right: 20px;
-  top: -2px;
+.plano-1,
+.plano-3 {
+  margin-top: 44px;
 }
 
-.flag-discount::before,
-.flag-discount::after {
-  border-style: solid;
-  content: "";
-  display: block;
-  height: 0;
-  position: absolute;
-  width: 0;
+.plano-2 {
+  border: 2px solid var(--dark-purple);
+  transform: scale(1.1);
+  z-index: 10;
 }
 
-.flag-discount::before {
-  border-color: var(--dark-purple) transparent transparent transparent;
-  border-width: 35px 30px 0 0;
-  bottom: -32px;
-  left: 0;
-}
-
-.flag-discount::after {
-  border-color: transparent var(--dark-purple) transparent transparent;
-  border-width: 0 30px 35px 0;
-  bottom: -32px;
-  right: 0;
+.plano-2:hover {
+  transform: scale(1.2);
 }
 
 .plano-preco h4 span {
@@ -177,13 +138,18 @@ export default {
   transform: scale(1.1);
 }
 
-sub {
-  margin-top: 20px;
-}
-
-@media (max-width: 425px) {
-  .plano-preco {
-    align-self: flex-start;
+/* @media (max-width: 768px) {
+  .plano-1,
+  .plano-3 {
+    margin-top: 0;
   }
-}
+
+  .plano-2 {
+    transform: scale(1);
+  }
+
+  .plano-2:hover {
+    transform: scale(1.1);
+  }
+} */
 </style>

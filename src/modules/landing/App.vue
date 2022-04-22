@@ -11,15 +11,15 @@
 </template>
 
 <script>
-import Header from "@js/components/landing/groups/Header";
-import Home from "@js/components/landing/sections/Home";
-import Especialidades from "@js/components/landing/sections/Especialidades";
-import Funcionalidades from "@js/components/landing/sections/Funcionalidades";
-import SobreApp1 from '@js/components/landing/sections/SobreApp1';
-import SobreApp2 from '@js/components/landing/sections/SobreApp2';
-import Planos from "@js/components/landing/sections/Planos";
-import Contato from "@js/components/landing/sections/Contato";
-import Footer from "@js/components/landing/sections/Footer";
+import Header from "@//components/landing/groups/Header";
+import Home from "@//components/landing/sections/Home";
+import Especialidades from "@//components/landing/sections/Especialidades";
+import Funcionalidades from "@//components/landing/sections/Funcionalidades";
+import SobreApp1 from '@//components/landing/sections/SobreApp1';
+import SobreApp2 from '@//components/landing/sections/SobreApp2';
+import Planos from "@//components/landing/sections/Planos";
+import Contato from "@//components/landing/sections/Contato";
+import Footer from "@//components/landing/sections/Footer";
 
 export default {
   name: "LandingPage",
@@ -39,5 +39,5 @@ export default {
 </script>
 
 <style scoped>
-@import "@css/landing-page.css";
+@import "@/styles/landing-page.css";
 </style>

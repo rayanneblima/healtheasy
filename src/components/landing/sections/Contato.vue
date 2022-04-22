@@ -25,9 +25,9 @@
 </template>
 
 <script>
-import { sites } from "@static/landing-page";
-import SocialButton from "@js/components/landing/elements/SocialButton";
-import FormContato from "@js/components/landing/groups/FormContato";
+import { sites } from "@/static/landing-page";
+import SocialButton from "@//components/landing/elements/SocialButton";
+import FormContato from "@//components/landing/groups/FormContato";
 
 export default {
   name: "Contato",

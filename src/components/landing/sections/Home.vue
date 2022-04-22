@@ -16,14 +16,14 @@
 
       <div class="section-right">
         <!-- TODO: trocar imagem -->
-        <img src="/images/mockup-1.jpg" alt="" />
+        <img src="@/assets/mockup-1.jpg" alt="" />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Button from "@js/components/landing/elements/Button";
+import Button from "@//components/landing/elements/Button";
 
 export default {
   name: "HomeSection",

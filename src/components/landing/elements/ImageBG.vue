@@ -2,7 +2,7 @@
   <div class="image-bg">
     <div class="bg" :style="{ backgroundColor: bgColor }"></div>
     <!-- TODO: trocar imagem -->
-    <img src="/images/mockup-1.jpg" alt="" />
+    <img src="@/assets/mockup-1.jpg" alt="" />
   </div>
 </template>
 

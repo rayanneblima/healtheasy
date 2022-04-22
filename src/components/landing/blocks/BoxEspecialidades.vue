@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import { especialidades } from "@static/landing-page";
-import CardEspecialidade from "@js/components/landing/elements/CardEspecialidade";
+import { especialidades } from "@/static/landing-page";
+import CardEspecialidade from "@//components/landing/elements/CardEspecialidade";
 
 export default {
   name: "BoxEspecialidade",

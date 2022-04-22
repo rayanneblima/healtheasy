@@ -2,7 +2,7 @@
   <footer>
     <div class="content grid">
       <div class="footer-sobre">
-        <img src="/images/logos/logo-white.png" alt="Health Easy - Logomarca" />
+        <img src="@/assets/logos/logo-white.png" alt="Health Easy - Logomarca" />
         <p>
           Lorem ipsum dolor amet, consectetur adipiscing elit.
           Eget nisl nunc quam ac sed turpis volutpat. Cursus sed
@@ -73,8 +73,8 @@
 </template>
 
 <script>
-import { sites } from "@static/landing-page";
-import SocialButton from "@js/components/landing/elements/SocialButton";
+import { sites } from "@/static/landing-page";
+import SocialButton from "@//components/landing/elements/SocialButton";
 
 export default {
   name: "Footer",

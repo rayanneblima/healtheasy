@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import BoxEspecialidades from "@js/components/landing/blocks/BoxEspecialidades";
+import BoxEspecialidades from "@//components/landing/blocks/BoxEspecialidades";
 
 export default {
   name: "Especialidades",

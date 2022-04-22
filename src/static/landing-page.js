@@ -32,19 +32,15 @@ export const especialidades = [
   },
   {
     id: 3,
-    nome: "Médicos",
+    nome: "Consultórios",
   },
   {
     id: 4,
-    nome: "Odontólogos",
+    nome: "Cardiologistas",
   },
   {
     id: 5,
-    nome: "Psicólogos",
-  },
-  {
-    id: 6,
-    nome: "Nutricionistas",
+    nome: "Dermatologistas",
   },
 ];
 
@@ -81,88 +77,113 @@ export const funcionalidades = [
   },
 ];
 
-export const planos = {
-  precoPadrao: 29.90,
-  opcoes: [
-    {
-      id: 1,
-      acessos: "1-4",
-      desconto: 0
-    },
-    {
-      id: 2,
-      acessos: "5-10",
-      desconto: 0.1
-    },
-    {
-      id: 3,
-      acessos: ">11",
-      desconto: 0.15
-    }
-  ],
-  servicos: [
-    {
-      id: 1,
-      nome: "Suporte 24h",
-      icone: "check"
-    },
-    {
-      id: 2,
-      nome: "Suporte 24h",
-      icone: "check"
-    },
-    {
-      id: 3,
-      nome: "Suporte 24h",
-      icone: "check"
-    },
-    {
-      id: 4,
-      nome: "Suporte 24h",
-      icone: "cancel"
-    },
-    {
-      id: 5,
-      nome: "Suporte 24h",
-      icone: "cancel"
-    },
-    {
-      id: 6,
-      nome: "Suporte 24h",
-      icone: "cancel"
-    }
-  ]
-};
-
-export const sites = [
-  // {
-  //   id: 1,
-  //   nome: "Facebook",
-  //   icone: "facebook",
-  //   link: "http://www.facebook.com/"
-  // },
-  // {
-  //   id: 2,
-  //   nome: "Twitter",
-  //   icone: "twitter",
-  //   link: "http://www.twitter.com/"
-  // },
+export const planos = [
+  {
+    id: 1,
+    valor: "200,00",
+    inclui: [
+      {
+        id: 1,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 2,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 3,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 4,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      },
+      {
+        id: 5,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      },
+      {
+        id: 6,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      }
+    ]
+  },
+  {
+    id: 2,
+    valor: "300,00",
+    inclui: [
+      {
+        id: 1,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 2,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 3,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 4,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 5,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      },
+      {
+        id: 6,
+        nome: "Suporte 24h",
+        icone: "cancel"
+      }
+    ]
+  },
   {
     id: 3,
-    nome: "LinkedIn",
-    icone: "linkedin",
-    link: "http://www.linkedin.com/mwlite/company/healtheasy"
-  },
-  {
-    id: 4,
-    nome: "Instagram",
-    icone: "instagram",
-    link: "http://www.instagram.com/healtheasyapp"
-  },
-  {
-    id: 5,
-    nome: "Health Easy",
-    icone: "personalizado",
-    link: "http://www.healtheasy.com.br/"
+    valor: "600,00",
+    inclui: [
+      {
+        id: 1,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 2,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 3,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 4,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 5,
+        nome: "Suporte 24h",
+        icone: "check"
+      },
+      {
+        id: 6,
+        nome: "Suporte 24h",
+        icone: "check"
+      }
+    ]
   }
 ];
