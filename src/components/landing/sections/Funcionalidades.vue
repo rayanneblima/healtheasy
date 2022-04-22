@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import BoxFuncionalidades from "@js/components/landing/blocks/BoxFuncionalidades";
+import BoxFuncionalidades from "@/components/landing/blocks/BoxFuncionalidades";
 
 export default {
   name: "Funcionalidades",

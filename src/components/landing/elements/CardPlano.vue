@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Button from "@js/components/landing/elements/Button";
+import Button from "@/components/landing/elements/Button";
 
 export default {
   name: "CardPlano",

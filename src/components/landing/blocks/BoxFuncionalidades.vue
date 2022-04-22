@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import { funcionalidades } from "@static/landing-page";
-import CardFuncionalidade from "@js/components/landing/elements/CardFuncionalidade";
+import { funcionalidades } from "@/static/landing-page";
+import CardFuncionalidade from "@/components/landing/elements/CardFuncionalidade";
 
 export default {
   name: "BoxFuncionalidades",

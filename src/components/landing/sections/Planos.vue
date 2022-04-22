@@ -35,9 +35,9 @@
 </template>
 
 <script>
-import { planos } from "@static/landing-page";
-import Input from "@js/components/landing/elements/Input";
-import CardPlano from "@js/components/landing/elements/CardPlano";
+import { planos } from "@/static/landing-page";
+import Input from "@/components/landing/elements/Input";
+import CardPlano from "@/components/landing/elements/CardPlano";
 
 export default {
   name: "Planos",

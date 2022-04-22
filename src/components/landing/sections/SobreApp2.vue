@@ -42,8 +42,8 @@
 </template>
 
 <script>
-import Chip from "@js/components/landing/elements/Chip";
-import ImageBG from "@js/components/landing/elements/ImageBG";
+import Chip from "@/components/landing/elements/Chip";
+import ImageBG from "@/components/landing/elements/ImageBG";
 
 export default {
   name: "SobreApp2",

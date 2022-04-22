@@ -4,9 +4,9 @@
       <nav>
         <ul class="">
           <li class="logo-item">
-            <router-link to="/#home" class="logo">
-              <img src="/images/logos/logo.png" alt="Health Easy" />
-            </router-link>
+            <a href="/#home" class="logo">
+              <img src="@/assets/logos/logo.png" alt="Health Easy" />
+            </a>
           </li>
 
           <li class="menu-itens" v-for="item in menu" :key="item.id">
@@ -27,7 +27,7 @@
         </p>
 
         <router-link to="/#home" class="logo">
-          <img src="/images/logos/logo.png" alt="Health Easy" />
+          <img src="@/assets/logos/logo.png" alt="Health Easy" />
         </router-link>
 
         <div class="header-buttons">
@@ -50,8 +50,8 @@
 </template>
 
 <script>
-import { menu } from "@static/landing-page";
-import Button from "@js/components/landing/elements/Button";
+import { menu } from "@/static/landing-page";
+import Button from "@/components/landing/elements/Button";
 
 export default {
   name: "Header",
